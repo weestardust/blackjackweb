@@ -1,0 +1,99 @@
+﻿
+@{ ViewData["Title"] = "BlackJack"; }
+
+<h1>Jogo BlackJack</h1>
+<br />
+<br />
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4" style="text-align:center">
+            <h3>
+                <span id="nome_jogador1">Player 1</span>
+            </h3>
+            <br /><br />
+            <img alt="carta1" src="/images/0.png" height="350" width="250" name="cartas1" id="cartas1">
+            <br /><br />
+            <button type="button" class="btn btn-success" name="btn_jogador_1" id="btn_jogador_1" disabled onclick="jogar('1')">
+                Jogar
+            </button>
+            <button type="button" class="btn btn-success" name="btn_parar_1" id="btn_parar_1" disabled onclick="parar('1')">
+                Parar
+            </button>
+        </div>
+        <div class="col-md-4" style="text-align:center">
+            <h3>
+                Partida
+            </h3>
+            <br /><br />
+            <button type="button" class="btn btn-success" name="btn_iniciar" id="btn_iniciar" onclick="iniciar()">
+                Iniciar
+            </button>
+            <button type="button" class="btn btn-success" name="btn_reiniciar" id="btn_reiniciar" disabled onclick="iniciarPartida()">
+                Nova partida
+            </button>
+            <br /><br />
+            <div class="row">
+
+                <div class="col-md-12">
+                    Pontos na partida
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="badge badge-default" id="jogador1">0</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="badge badge-default">X</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="badge badge-default" id="jogador2">0</span>
+                </div>
+            </div>
+            <br /><br />
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="badge badge-default" id="resultado" name="resultado"></span>
+                </div>
+            </div>
+            <br /><br />
+            <div class="row">
+
+                <div class="col-md-12">
+                    Pontos no jogo
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="badge badge-default" id="placar_jogador1">0</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="badge badge-default">X</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="badge badge-default" id="placar_jogador2">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" style="text-align:center">
+
+            <h3>
+                <span id="nome_jogador2">Player 2</span>
+            </h3>
+            <br /><br />
+            <img alt="carta2" class="lixo" src="/images/0.png" height="350" width="250" name="cartas2" id="cartas2">
+            <br /><br />
+            <button type="button" class="btn btn-success" name="btn_jogador_2" id="btn_jogador_2" disabled onclick="jogar('2')">
+                Jogar
+            </button>
+            <button type="button" class="btn btn-success" name="btn_parar_2" id="btn_parar_2" disabled onclick="parar('2')">
+                Parar
+            </button>
+
+        </div>
+    </div>
+</div>
